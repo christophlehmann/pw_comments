@@ -7,9 +7,11 @@
  *  |     2015 Dennis Roemmich <dennis@roemmich.eu>
  */
 
-if (!defined('TYPO3_MODE')) {
+if (!defined('TYPO3')) {
     die('Access denied.');
 }
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToInsertRecords('tx_pwcomments_domain_model_comment');
 
 $ll = 'LLL:EXT:pw_comments/Resources/Private/Language/locallang_db.xlf:';
 
